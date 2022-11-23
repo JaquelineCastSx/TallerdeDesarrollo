@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+
+<body>
+    <h1 id="titulo">Hola JavaScript</h1>
+    <p id="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sed at distinctio, quidem esse nam
+        minus. Maxime repellendus expedita voluptates ad minima, eveniet illum deserunt laboriosam impedit dolore nulla
+        sint?</p>
+    <ul id="colores">
+        <li>Uno</li>
+        <li>Dos</li>
+        <li>Tres</li>
+    </ul>
+
+
+    <script>
+        var titulo;
+        titulo = document.getElementById("titulo");
+        titulo.innerHTML = "Hola JS";
+
+        var text;
+        text = document.getElementById("texto");
+        text.style.fontSize = "40px";
+
+        var colores;
+        colores = document.getElementById("colores");
+        colores.style.display = "none";
+        colores.style.display = "block";
+
+        function cambiaColor() {//SCOPE
+            colores.style.color = "#f9d3c2";
+        }
+        cambiaColor();
+
+        document.write("Escrito desde JS: ");
+        document.write(40 + 60);
+        /*window.alert("Alerta de ficha");*/
+
+        var cadena;
+        console.log("Mensaje para desarrolladores");
+
+        let a, b, c;
+        a = 5;
+        b = 6;
+        c = a + b;
+        console.log(c);
+
+        var radio = 10;
+        const PI = 3.1416;
+
+        function CalcularArea() {
+            let areaTempo = PI * radio * radio;
+            return areaTempo;
+        }
+
+        //console.log(CalcularArea(radio));
+        var area = CalcularArea(15);
+        console.log(area);
+
+        let numero = 10.50;
+        var nuevoNum = 10;
+
+        let Cadena = "Dobles";
+        let Cadena2 = 'Sencillas';
+        let Cadena3 = `Invertidas`;
+
+        let multiplica = numero * nuevoNum;
+        console.log("Valor = " + multiplica);
+
+        /*Let HOISTING -> donde yo al declarar una variable no me permite redeclararlo contrario
+        a var que toma la ultima definición con valor*/
+
+        console.log(typeof Cadena);
+        console.log(typeof numero);
+        console.log(typeof PI);
+
+        console.log(3 > 10);
+
+        console.log("Thor" < "Iron Man");
+        console.log("a" < "b");
+        console.log("de" < "bc");
+
+        console.log(true && false);
+        console.log(true && true);
+        console.log(false || true);
+        console.log(true ? 1 : 2);
+        console.log(false ? 1 : 2);
+
+        //Ciclo while
+        let valor = 0;
+        while (valor <= 12) {
+            console.log(valor);
+            valor++;
+        }
+
+        /*Ciclo do-while
+        let nombre;
+        do {
+            nombre = prompt("¿Quién eres?");
+        } while (nombre);*/
+
+        //Ciclo for
+        for (let numero = 0; numero <= 12; numero++){
+            console.log(numero);
+        }
+
+        //Ciclo for-break
+        for (let actual = 0; actual <= 12; actual++) {
+            console.log(actual);
+            if (actual % 7 == 0) {
+                console.log("Residuo cero, aún entra "+actual);
+                break;
+            }
+        }
+
+        //Cuenta
+        var cuenta = 10;
+        cuenta=cuenta+1;
+        console.log(cuenta);
+
+        cuenta+=1;
+        console.log(cuenta);
+
+        let uno = 5;
+        let dos = 2;
+        let rojo = uno % dos;
+        console.log("División: "+rojo);
+
+        let x2 = 5;
+        x2++;
+        let z2 = x2;
+        console.log("Aumenta en 1: "+z2);
+
+        let x3 = 5;
+        x3--;
+        let z3 = x3;
+        console.log("Resta en 1: "+z3);
+
+        let x4 = 5;
+        let z4 = x4 * 2;
+        console.log("Multiplica: "+z4);
+
+        let x5 = 5;
+        let z5 = Math.pow(x5, 2);
+        console.log("Cuadrado: "+z5);
+
+        let x6 = (100+50)*3;
+        console.log(x6);
+
+        let x9;
+        x9=3;
+        x9="Luis";
+        console.log("Cambio de tipo de variable: "+x9);
+
+        let car="";
+        function miFuncion(a,b) {
+            return a*b;
+        }
+        console.log(miFuncion(3,7));
+
+        
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body style="background-color: #D1E8E4;">
+    
+<form action="enviar.html" method="get">
+    <label for="nombre">Nombre:</label>
+    <input type="text" name="nombre" id="nombre"><br><br>
+    <label for="apellido">Apellido</label>
+    <input type="text" name="apellido" id="apellido"><br><br>
+    <input type="submit" value="Enviar">
+</form>
+<hr>
+<form name="forma2" action="">
+    <fieldset>
+    <label for="nombre">Nombre:</label>
+    <input type="text" required name="nombre2" id="nombre2" placeholder="Ingresa tu nombre"><br><br>
+    <br>
+    <label for="correo">Correo Electronico:</label>
+    <input type="email" name="correo" id="correo">
+    <br> <br>
+    <label for="edad">Edad:</label>
+    <input type="number" step="any" name="edad" id="edad">
+    <br><br>
+    <label for="lenguaje">Selecciona un lenguaje:</label>
+    <input type="radio" name="lenguaje" id="js"> JavaScript 
+    <input type="radio" name="lenguaje" id="py"> Phyton
+    <input type="radio" name="lenguaje" id="c"> C
+    <br><br>
+    <label for="paises">¿Que paises has visitado?</label>
+    <input type="checkbox" name="paises" id="EU"> Estados Unidos
+    <input type="checkbox" name="paises" id="CA"> Canadá
+
+    <label for="mensaje">Ingresa un comentario:</label>
+    <textarea style="width: 100%;" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+
+    <br><br>
+        <label for=""></label>
+        <select name="autos" id="autos">
+            <option value="chevrolet">Chevrolet</option>
+            <option value="vw">VW</option>
+            <option value="ford">Ford</option>
+        </select>
+    <p>Selecciona tu navegador favorito</p>
+    <input list="navegadores">
+    <datalist id="navegadore">
+        <option value="Internet Explorer"></option>
+        <option value="Firefox"></option>
+        <option value="Chrome"></option>
+        <option value="Opera"></option>
+        <option value="Safari"></option>
+    </datalist>
+    <input type="submit" value="Enviar">
+    </fieldset> 
+</form>
+
+<hr>
+<form action="">
+    <label for="username">Usuario:</label><br>
+    <input type="text" id="username" name="username"><br>
+    <label for="pwd">Contraseña:</label><br>
+    <input type="password" id="pwd" name="pwd">
+    <br>
+
+    <label for="favcolor">Color favorito:</label>
+    <input type="color" id="favcolor" name="favcolor">
+    <br>
+
+    <label for="nac">Fecha de nacimiento:</label>
+    <input type="date" id="nac" name="nac">
+
+    <br>
+    <label for="viaje">Horario de partida:</label>
+    <input type="datetime-local" id="viaje" name="viaje">
+
+    <br>
+    <label for="archivo">Sube tu foto:</label>
+    <input type="file" id="archivo" name="archivo">
+
+    <br>
+    <input type="hidden" id="identificador" name="identificador" value="1234">
+
+    <br>
+    <label for="cantidad">Cantidad (entre 1 y 5):</label>
+    <input type="number" id="cantidad" name="cantidad" min="1" max="5">
+
+    <br>
+    <label for="vol">Volumen (entre 0 and 100):</label>
+    <input type="range" id="vol" name="vol" min="0" max="100">
+
+    <br>
+    <label for="celular">Teléfono:</label>
+    <input type="tel" id="celular" name="celular" pattern="[0-9]{3} [0-9]{3}-[0-9]{4}" placeholder="477 s123-4567">
+
+    <br>
+    <label for="hora">Seleccione una hora:</label>
+    <input type="time" id="hora" name="hora">
+
+    <br>
+    <label for="pagina">Agrega una URL:</label>
+    <input type="url" id="pagina" name="pagina">
+
+    <br>
+    <label for="semana">Selecciona una semana:</label>
+    <input type="week" id="semana" name="semana">
+
+    <input type="image" src="https://www.w3schools.com/html/img_submit.gif" alt="Submit" width="48" height="48">
+
+    <input type="submit" value="Enviar"><br>
+    <input type="reset">
+</form>
+
+
+</body>
+</html>

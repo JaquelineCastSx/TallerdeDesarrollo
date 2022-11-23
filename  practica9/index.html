@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <script>
+        AOS.init();
+      </script>
+    <style>
+        body{
+            animation: colores 3s infinite;
+        }
+        @keyframes colores{
+            0%{
+                background-color: #393e46;
+            }
+            25%{
+                background-color: #5c636e;
+            }
+            50%{
+                background-color: #f96d00;
+            }
+            75%{
+                background-color: #f2f2f2;
+            }
+            100%{
+                background-color: #fcea90;  
+            }
+        }
+        .cuadroBlanco{
+            background: #ba7967;
+            position: absolute;
+            animation: mueveCuadro 1s infinite;
+        }
+        #cuadroBlanco1{
+            width: 100px;
+            height: 100px;
+            left: 80px;
+        }
+        #cuadroBlanco2{
+            width: 100px;
+            height: 100px;
+            left: 200px;
+        }
+        #cuadroRojo{
+            width: 100px;
+            height: 100px;
+            background: #d68060;
+            position: absolute;
+            left: 350px;
+            animation: mueveRojo 5s infinite;
+        }
+        #cuadroColores{
+            width: 100px;
+            height: 100px;
+            background: #d68060;
+            position: relative;
+            left: 500px;
+            animation: mueveColores 1s infinite;
+        }
+        @keyframes mueveCuadro{
+            from{
+                top: 0px;
+            }
+            to{
+                top: 300px;
+            }
+        }
+        @keyframes mueveRojo{
+            0%{top: 0px;}
+            25%{top: 200px;}
+            50%{top: 50px;}
+            100%{top: 100px;}
+        }
+        @keyframes mueveColores{
+            0%{top: 0px; left: 500px; background: #86aba1;}
+            25%{top: 0px; left: 600px; background: #405983;}
+            50%{top: 100px; left: 600px; background: #ffbd39;}
+            75%{top: 100px; left: 500px; background: #574b90;}
+            100%{top: 0px; left: 500px; background: #d3504a;}
+        }
+        h1{
+            margin-top: 300px;
+        }
+        #espacio{
+            width: 200px;
+            height: 900px;
+        }
+        .cuadroAnimado{
+            border: 10px solid #e2e0a5;
+            background-color: #99b27f;
+            width: 300px;
+            height: 300px;
+        }
+        .gradiente{
+            background: #00334e; background: -webkit-linear-gradient( to right top, #00334e, #004978, #005fa3, #2e74d0,#5e88fc); background: linear-gradient(to to right top, #00334e, #004978, #005fa3, #2e74d0,#5e88fc);
+            
+        }
+    </style>
+
+    <div id="cuadroBlanco1" class="cuadroBlanco"></div>
+    <div id="cuadroBlanco2" class="cuadroBlanco"></div>
+    <div id="cuadroRojo"></div>
+    <div id="cuadroColores"></div>
+    <!--Falta hacer el circulo, buscalo-->
+    <h1 class="animate__animated animate__backInDown" >Titulo 1</h1>
+    <div id="espacio"></div>
+    <h2 data-aos="fade-right">Texto animado</h2>
+    <div class="cuadroAnimado gradiente"></div>
+
+</body>
+</html>

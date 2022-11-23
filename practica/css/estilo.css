@@ -1,0 +1,44 @@
+header{
+    background-color: #3F6699;
+    text-align: center;
+    padding: 30px;
+}
+nav{
+    float: left;
+    width: 15%;
+    height: 500px;
+    background-color: #F3ECC8;
+    font-family: 'Amatic SC', cursive;
+}
+article{
+    float: left;
+    width: 35%;
+    background-color: #607EAA;
+    height: 500px;
+}
+h1{
+    font-family: 'Abril Fatface', cursive;
+}
+#descripcion{
+    font-family: 'Lora', serif;
+}
+#fotoSerie{
+    float: left;
+    background-color: #0D1B4C;
+    width: 50%;
+    height: 500px;
+}
+footer{
+    clear: both;
+    background-color: #78C2C3;
+    padding: 20px;
+    text-align: center;
+}
+h2,p, h3{
+    padding: 20px;
+    font-family: 'Michroma', sans-serif;
+}
+#reparto{
+    font-family: 'Lora', serif; 
+    list-style-type: square;
+}
