@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultima clase</title>
+</head>
+<body>
+    <p id="elemento"></p>
+    <br>
+    <br>
+    <p id="lenguaje"></p>
+    <p id="browser"></p>
+    <p id="datos"></p>
+
+
+
+    <script>
+        var elemento, Elemento;
+        elemento = "Java";
+        Elemento = "JavaScript";
+        document.getElementById("elemento").innerHTML = elemento;
+
+        let lenguaje = window.navigator.language;
+        document.getElementById("lenguaje").innerHTML = lenguaje;
+
+        let browser = navigator.appCodeName;
+        document.getElementById("browser").innerHTML = browser;
+
+        //Object window
+        let datos = document.getElementById("datos");
+        datos.innerHTML = 
+        "<p>Browser name: "+ navigator.appName + "</p>" +
+        "<p>Browser version: "+ navigator.appVersion + "</p>" +
+        "<p>cookies enabled: "+ navigator.cookieEnabled + "</p>" +
+        "<p>Browser On-line: "+ navigator.onLine + "</p>" +
+        "<p>Platform: "+ navigator.platform + "</p>" +
+        "<p>User-agent header: "+ navigator.userAgent + "</p>";
+
+        //
+
+        window.console.error("Tienes un error");
+        console.info("Informativo");
+        console.warn("Aviso");
+        console.clear();
+
+        var empleados = ["Mario", "Jorge", "Felipe"];
+        console.table(empleados);
+
+        console.log(history.length);
+
+
+        
+
+    </script>
+</body>
+</html>
